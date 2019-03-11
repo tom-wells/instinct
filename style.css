@@ -1,0 +1,218 @@
+body {
+    margin:0;
+    width:100%;
+    font-size:16px;
+    font-family: 'bluu Next';
+    color:#FFAF9D;
+
+
+}
+
+body p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+header {
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    background-color:#fff;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 2;
+    transition:transform 0.5s ease;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+header h1 {
+    color:#FFAF9D;
+    padding:0 20px 0 20px;
+    margin:10px;
+}
+
+header nav {
+    padding:0 20px 0 20px;
+
+}
+
+nav a {
+    text-decoration:none;
+    color:#FFAF9D;
+    margin-left:25px;
+    font-size:18px;
+}
+
+nav a:hover {
+    border-bottom: #FFAF9D solid 2px;
+}
+
+.selected {
+
+    border-bottom:#FFAF9D solid 2px;
+}
+
+.hero {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("images/Charlotte_and_James_at_George_in_Rye_252.JPG");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:40% 60%; ;
+}
+
+.hero h2 {
+    position:relative;
+    text-align:center;
+    font-size:48px;
+    width:700px;
+    color:#fff;
+
+}
+
+.about {
+    background-color:#FDE6DC;
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.about-image {
+    padding-right:100px;
+}
+
+
+.about-image div {
+    width:400px;
+    height:500px;
+    background-image:url("images/IMG_8378.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    )
+}
+
+
+.about h4 {
+    margin:0;
+    font-size:24px;
+}
+
+.about-text {
+    margin-top:20px;
+    width:450px;
+    display:flex;
+    flex-direction:column;
+
+  
+}
+
+.about-text p {
+    padding-top:10px;
+}
+
+.couples {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color:#FFAF9D;
+}
+
+.couples h2 {
+    margin-top:10px;
+    font-size:48px;
+    color:#fff;
+
+}
+
+h6 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.couple-1 {
+    height:100%;
+    background-color:#FDE6DC;
+
+}
+
+.couple-1 h6 {
+    margin:0px 0 20px 40px;
+    padding-top:60px;
+    position: relative;
+}
+
+.couple-1 .large-photo {
+    padding-top:20px;
+    display:flex;
+    width:100%;
+    height:600px;
+    background-image:url("images/N&R273.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.instinct-feed {
+    background-color:#FDE6DC;
+    height:100%;
+}
+
+.instinct-feed h4 {
+    display:flex;
+    justify-content: center;
+    margin:0 0 50px 0;
+    padding-top:125px;
+    font-size:24px;
+}
+
+.instinct-feed .photos {
+    margin:0px auto 0 auto;
+    width:900px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.instinct-feed .photo {
+    width:33.33%;
+    height:300px;
+}
+
+
+.photo img {
+    width:300px;
+    height: 300px;
+}
+
+footer {
+    padding:10px 20px 10px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width:100%;
+    background-color:#FFAF9D;
+
+}
+
+footer p {
+    color:#fff;
+}
+
+footer div img {
+    widows: 25px;
+    height:25px;
+    margin-left:25px;
+}
+
+
