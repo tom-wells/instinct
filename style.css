@@ -193,6 +193,7 @@ align-items: center;
 
 
 .contact .message {
+    font-family:"Work Sans";
     resize:none;
     width:350px;
     height:200px;
