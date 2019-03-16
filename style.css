@@ -193,7 +193,14 @@ align-items: center;
 
 
 .contact .message {
-    padding-bottom:200px;
+    resize:none;
+    width:350px;
+    height:200px;
+    font-size:16px;
+    border:none;
+    margin-top:10px;
+    color:#FFAF9D;
+    padding:5px;
 }
 
 .quote h2 {
@@ -259,7 +266,7 @@ font-family:"Work Sans";
     justify-content: center;
     color:#fff;
     text-decoration:none;
-    font-size:14px;
+    font-size:16px;
 
 }
 
