@@ -9,8 +9,12 @@ body {
 
 }
 
+a {
+    font-family:"Work Sans"
+}
+
 body p {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Work Sans" ,Arial, Helvetica, sans-serif;
 }
 header {
     top:0;
@@ -121,12 +125,14 @@ h2 {
     flex-direction:column;
 }
 
-.about-text p {
-    padding-top:5px;
-}
 
 .prices {
     width:100%;
+}
+
+.prices h4 {
+    font-size:24px;
+
 }
 
 .package-1 {
@@ -134,6 +140,10 @@ h2 {
     height:100vh;
     display:flex;
     
+}
+
+.package-1 h4 {
+    max-width:500px;
 }
 
 .package-1-photos {
@@ -152,6 +162,10 @@ width:350px;
     width:50%;
 }
 
+.package-1-info p {
+    font-weight:700;
+}
+
 .package-1-info ul{
     padding:0px;
     width:450px;
@@ -160,20 +174,24 @@ width:350px;
 
 .package-1-info li {
 line-height:1.6;
+font-family:"Work Sans";
+
+
 }
 
 .book-button {
-    width:100px;
-    height:25px;
-    background-color:#000;
-    padding:5px;
-    text-align:center;
-    margin-top:30px;
+    width: 100px;
+    height: 32px;
+    background-color: #000;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .book-button a {
-    font-family: Arial, Helvetica, sans-serif;
+
     color:#fff;
     text-decoration:none;
     font-size:14px;

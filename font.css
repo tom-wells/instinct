@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
 @font-face {
     font-family: 'bluu';
     src: url('bluunext-bold-webfont.woff2') format('woff2'),
@@ -17,14 +19,7 @@
      font-style: normal;
     }
 
-    @font-face {
-     font-family: 'salt pepper ornaments';
-     src: url('fonts/saltpepper-ornamentssmooth-webfont.woff2') format('woff2'),
-          url('fonts/saltpepper-ornamentssmooth-webfont.woff') format('woff'),
-          url('fonts/saltpepper-ornamentssmooth-webfont.ttf') format('truetype'),
-          url('fonts/saltpepper-ornamentssmooth-webfont.svg') format('svg');
-     font-weight: normal;
-     font-style: normal;
- }
 
+
+ 
  
