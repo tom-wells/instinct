@@ -191,6 +191,8 @@ line-height:1.6;
 
 .couples div {
     display:flex;
+    justify-content: center
+
 }
 
 .couples h2 {
@@ -203,12 +205,23 @@ line-height:1.6;
     text-align:center;
 }
 
+.left {
+    left:0px;
+    padding:60px;
+}
+
+.right {
+    right:0px;
+    padding:60px;
+}
+
 .couples div img {
     display:none;
+    position: absolute;
 }
 
 .couples div:hover img {
-    display:inline-block;
+    display:flex;
 }
 h6 {
     font-family:Arial, Helvetica, sans-serif;
