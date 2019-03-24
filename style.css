@@ -1,3 +1,13 @@
+@keyframes  fadeIn {
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
 body {
     margin:0;
     line-height:1.4;
@@ -71,6 +81,7 @@ nav a:hover {
     background-size:cover;
     background-repeat:no-repeat;
     background-position:40% 60%;
+    animation: fadeIn 2s;
 }
 
 .hero h2 {
@@ -136,6 +147,15 @@ h2 {
 
 }
 
+.prices .arrow {
+    cursor:pointer;
+    width:100%;
+    bottom:20px;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    
+}
 
 .contact {
     display:flex;
@@ -171,7 +191,7 @@ align-items: center;
     background-color: #FFAF9D;
     font-family:"Work Sans";
     font-size:16px;
-    margin:10px 0 0 0 ;
+    margin:20px 0 0 0 ;
 
 
 
@@ -213,45 +233,66 @@ align-items: center;
 
 
 
-.package-1 {
+.package{
     max-width:100%;
     height:100vh;
     display:flex;
+    position: relative;
     
 }
 
-.package-1 h4 {
+.package h4 {
     max-width:500px;
 }
 
-.package-1-photos {
+.package-photos {
     width:50%;
-    padding:100px;
+    padding:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.package-1-photos img{
+.package-photos img{
 width:350px;
 }
 
-.package-1-info {
+.package-photos-3 {
+    width:50%;
+    padding:50px;
+    position:relative;
+
+}
+
+.package-photos-3 img {
+width:350px;
+}
+
+.package-photos-3 .overlap {
+    position:absolute;
+bottom:100px;
+left:100px;
+}
+
+.package-info {
     display:flex;
     flex-direction: column;
     justify-content: center;
     width:50%;
 }
 
-.package-1-info p {
+.package-info p {
     font-weight:700;
 }
 
-.package-1-info ul{
+.package-info ul{
     padding:0px;
     width:450px;
 
 }
 
-.package-1-info li {
-line-height:1.6;
+.package-info li {
+line-height:1.8;
 font-family:"Work Sans";
 
 
@@ -299,7 +340,7 @@ font-family:"Work Sans";
  
     cursor:pointer;
     margin:40px 20px;
-    font-size:48px;
+    font-size:36px;
     color:#fff;
     position: relative;
     text-align:center;
@@ -322,6 +363,8 @@ font-family:"Work Sans";
 
 .couples div:hover img {
     display:flex;
+    animation:fadeIn 1s;
+
 }
 
 h6 {
@@ -380,7 +423,7 @@ position:relative;
 display:flex;
 justify-content: right;
 position: relative;
-bottom:350px;
+top:-200px;
 margin:0px 100px 0 100px;
 
 }
@@ -446,5 +489,3 @@ footer div img {
     height:25px;
     margin-left:25px;
 }
-
-
