@@ -40,6 +40,11 @@ gulp.task("images", function() {
         .pipe(gulp.dest("dist/img"))
 })
 
+gulp.task("scripts", function(){
+    return gulp.src("src/scripts/*")
+        .pipe(gulp.dest("dist/scripts"))
+})
+
 gulp.task("watch", function() {
 
     browserSync.init({
@@ -50,9 +55,10 @@ gulp.task("watch", function() {
     
     gulp.watch("src/*.html", ["html"]).on("change", browserSync.reload)
     gulp.watch("src/css/app.scss",["sass"])
-    gulp.watch("src/img/*", ["images"])
     gulp.watch("src/fonts/*", ["fonts"])
+    gulp.watch("src/img/*", ["images"])
+    gulp.watch("src/scripts/*", ["scripts"])
 
 })
    
-gulp.task('default', ["html", "sass", "fonts", "images", "watch"])
+gulp.task('default', ["html", "sass", "scripts", "fonts", "images", "watch"])
