@@ -9,14 +9,25 @@ photoTag = document.querySelector('.gallery-nav .photography')
 navButton = document.querySelector('.mobile-nav-button')
 navMenu = document.querySelector('.mobile-nav')
 navMenuOptions = document.querySelector('.mobile-nav nav')
+navCloseTag = document.querySelector('.mobile-nav-close')
 
+navCloseTag.addEventListener('click', function() {
+    navButton.classList.remove('open')
+    navMenu.classList.remove('open')
+    navCloseTag.classList.remove('open')
+
+})
 
 navButton.addEventListener('click', function() {
-    navMenu.classList.toggle('open')
+    navMenu.classList.add('open')
+    navCloseTag.classList.add('open')
+    navButton.classList.add('open')
 });
 
 navMenuOptions.addEventListener('click', function() {
     navMenu.classList.remove('open')
+    navCloseTag.classList.remove('open')
+    navButton.classList.remove('open')
 });
 
 videoTag.addEventListener('click', function() {
