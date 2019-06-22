@@ -591,11 +591,12 @@ footer {
         width:100%;
         display:flex;
         justify-content: center;
-        padding-top:40px;
+        padding-top:60px;
         
         img {
             border-radius:50%;
-            width:250px;
+            width:200px;
+            height:200px;
         }    }
 
     .about-image-container {
@@ -605,7 +606,7 @@ footer {
     .about-text {
 
         max-width:100%; 
-       padding:0;
+       padding:20px 0 0 0;
         h4 {
                 padding-left:15px;
                 padding-right:15px;
