@@ -542,7 +542,22 @@ footer {
 
 @media (max-width:960px) {
 
+.galleries {
+    padding:0 20px 0px 20px;
 
+    .videography-section .videos,
+    .photography-section .images {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        justify-content: center;
+        grid-row-gap: 20px;
+        grid-column-gap:20px;
+
+        .overlay {
+            display:none;
+        }
+    }
+}
     header nav {
         display:none;
     }
@@ -642,8 +657,8 @@ footer {
      
     }
 
+    
 
-  
 
     .gallery-nav img {
         display:none;
@@ -678,8 +693,6 @@ footer {
         
     }
 
-
-
     .package-info .content {
         display:flex;
         flex-direction:column;
@@ -692,7 +705,7 @@ footer {
         margin-right:auto;
         text-align:center;
             img {
-        width:80px;
+        width:75px;
     }
     }
 

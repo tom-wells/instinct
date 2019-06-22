@@ -46,7 +46,11 @@ photoTag.addEventListener('click', function() {
 });
 
 
-$('.images .image').on('click', function() {
+
+$(window).resize(function() {
+if($(window).width() <= 960){
+  // do your stuff
+  $('.images .image').on('click', function() {
 
 
     var currentImage = $(this).html()
@@ -71,3 +75,8 @@ $('.modal-close, .modal-background').on('click', function() {
     $('.modal').fadeOut(500)
     return false
 })
+
+}
+
+
+});
