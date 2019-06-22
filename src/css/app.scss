@@ -145,6 +145,10 @@ h2 {
   
 }
 
+.mobile-about {
+    display:none;
+}
+
 
 .about h4 {
     margin-bottom:25px;;
@@ -543,7 +547,7 @@ footer {
 @media (max-width:960px) {
 
 .galleries {
-    padding:0 20px 0px 20px;
+    padding:0 20px 80px 20px;
 
     .videography-section .videos,
     .photography-section .images {
@@ -568,31 +572,52 @@ footer {
     }
 
     .about {
+        display:flex;
+        flex-direction:column;
         height:100%;
+        max-width:100%;
         
     }
     .about-image {
         display:none;
     }
 
+    .mobile-about {
+        width:100%;
+        display:flex;
+        justify-content: center;
+        padding-top:40px;
+        
+        img {
+            border-radius:50%;
+            width:250px;
+        }    }
+
     .about-image-container {
         padding:0px;
      }
 
     .about-text {
+
+        max-width:100%; 
+       padding:0;
         h4 {
-            padding-top:80px;
+                padding-left:15px;
+                padding-right:15px;
+            
             
         }
-        padding: 0 100px 0 100px;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        p{
+            padding-left:15px;
+            padding-right:15px;
+        }
+        
+       
     }
 
     .mobile-nav-close.open {
             display:block;
+            cursor:pointer;
             padding-right:20px;
             p {
                 margin:0;
@@ -657,7 +682,6 @@ footer {
      
     }
 
-    
 
 
     .gallery-nav img {
@@ -665,7 +689,7 @@ footer {
     }
 
     .package {
-        padding-bottom:40px;
+        padding-bottom:80px;
     }
 
     .package-block {
@@ -743,7 +767,7 @@ footer {
 
 
 
-@media (max-width:450px) {
+@media (max-width:550px) {
 
 
     header h1 {
@@ -754,10 +778,12 @@ footer {
     }
 
     .about-text {
-        padding:0px 20px 0px 20px;
         line-height:1.6;
     }
 
+    .gallery-nav h3 {
+        font-size:16px;
+    }
 
     .contact input {
        width:250px;

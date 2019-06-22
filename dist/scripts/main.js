@@ -46,10 +46,28 @@ photoTag.addEventListener('click', function() {
 });
 
 
+// responsive Javascipt
 
-$(window).resize(function() {
-if($(window).width() <= 960){
-  // do your stuff
+var stateManager = (function () {
+    var state = null;
+    var resizePage = function () {
+      if ($('body').width() <= 960) {
+        if (state !== "mobile") { displayMobile(); }
+  resizeMobile();
+      }
+      else {
+        if (state !== "desktop") { displayDesktop(); }
+  resizeDesktop();
+      }
+  }; 
+    var displayMobile = function () {
+  state = "mobile";
+  console.log("enter mobile");
+    };
+    var displayDesktop = function () {
+  state = "desktop";
+  console.log("enter desktop");
+
   $('.images .image').on('click', function() {
 
 
@@ -68,15 +86,28 @@ $('.videos .video').on('click', function() {
     return false
 })
 
-
-
-
 $('.modal-close, .modal-background').on('click', function() {
     $('.modal').fadeOut(500)
     return false
 })
 
-}
+    };
+    var resizeMobile = function () {
+      console.log("resizing mobile");
+    };
+    var resizeDesktop = function () {
+      console.log("resizing desktop");
+    };
+    return {
+      init: function () {
+        resizePage();
+        $(window).on('resize', resizePage);
+      }
+    };
+  } ());
+  stateManager.init();
+  
+  // do your stuff
+  
 
 
-});
