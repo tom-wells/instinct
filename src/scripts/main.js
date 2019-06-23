@@ -87,8 +87,9 @@ $('.videos .video').on('click', function() {
 })
 
 $('.modal-close, .modal-background').on('click', function() {
-    $('.modal').fadeOut(500)
-    return false
+  $('.modal').fadeOut(500, function () {
+    $('.modal-content').html("")
+   })
 })
 
     };
